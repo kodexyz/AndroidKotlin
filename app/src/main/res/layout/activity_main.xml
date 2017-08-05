@@ -64,16 +64,14 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/kilometers"
         android:ems="10"
+        android:hint="@string/kilometers"
         android:inputType="number"
-        android:text="@string/kilometers"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/kilometers" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
