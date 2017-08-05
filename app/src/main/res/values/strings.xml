@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">Week2</string>
+    <string name="app_name">Distance <Converter> </Converter></string>
     <string name="kilometers">Kilometers</string>
+    <string name="miles">Miles</string>
+    <string name="kilos_miles">Kilos-Miles</string>
+    <string name="miles_kilos">Miles-Kilos</string>
 </resources>
