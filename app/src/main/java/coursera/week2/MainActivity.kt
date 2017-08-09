@@ -21,10 +21,6 @@ class MainActivity : AppCompatActivity() {
             val textMiles = findViewById<View>(R.id.MilesInput) as EditText
             val result = (textMiles.text.toString().toDouble() * 1.609344)
             KilosInput.setText(result.toString())
-            Snackbar.make(
-                    view, result.toString(), Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-
         }
         val KilosButton= findViewById<View>(R.id.buttonKilotoMiles)
         KilosButton.setOnClickListener {
@@ -33,9 +29,6 @@ class MainActivity : AppCompatActivity() {
             val textKilos = findViewById<View>(R.id.KilosInput) as EditText
             val result = (textKilos.text.toString().toDouble() / 1.609344)
             MilesInput.setText(result.toString())
-            Snackbar.make(
-                view, result.toString(), Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
         }
     }
 }
