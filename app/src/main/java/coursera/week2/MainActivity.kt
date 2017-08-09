@@ -6,6 +6,7 @@ import android.support.design.widget.Snackbar
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +19,8 @@ class MainActivity : AppCompatActivity() {
             view ->
             //Miles to kilos
             val textMiles = findViewById<View>(R.id.MilesInput) as EditText
-            val result = ((textMiles.text.toString().toLong()) * 1.609344)
+            val result = (textMiles.text.toString().toDouble() * 1.609344)
+            KilosInput.setText(result.toString())
             Snackbar.make(
                     view, result.toString(), Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
@@ -29,7 +31,8 @@ class MainActivity : AppCompatActivity() {
             view ->
             // Kilos to Miles
             val textKilos = findViewById<View>(R.id.KilosInput) as EditText
-            val result = ((textKilos.text.toString().toLong()) / 1.609344)
+            val result = (textKilos.text.toString().toDouble() / 1.609344)
+            MilesInput.setText(result.toString())
             Snackbar.make(
                 view, result.toString(), Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
